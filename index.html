@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="UTF-8">
-        <title>Regataiades - La plus grande competiion etudiante en France et en Europe hors FFSU</title>
+        <title>Aviron Universitaire - Regataiades Internationales de Nantes</title>
         <style>
                 @import url(//fonts.googleapis.com/css?family=Lato:700);
 
@@ -30,15 +30,75 @@
                 h1 {
                         font-size: 32px;
                         margin: 16px 0 0 0;
+						color: #000;
                 }
+				#contact h2{
+					font-size: 20px;
+					margin: 40px 0 5px;
+				}
+				#contact a, #contact p{
+					margin: 5px 0;
+					padding: 0;
+					color: #999;
+				}
+				#contact a:hover{
+					opacity: 0.7;
+				}
+				#social h3{
+					font-size: 16px;
+					margin: 40px 0 10px;
+				}
+				#social div{
+					margin: 0 5px;
+					width: 35px;
+					height: 35px;
+					background-color: red;
+					display: inline-block;
+					background-image: url('images/social.jpg');
+					background-repeat: no-repeat;
+				}
+				#social div:hover{
+					opacity: 0.7;
+				}
+				#tw{
+					background-position: -45px -42px;
+				}
+				#google{
+					background-position: 0 -42px;
+				}
+				#date, #contact h2, #social h3{
+					color: #189FDB;
+				}
         </style>
 </head>
 <body>
         <div class="welcome">
                 <a href="http://una-club.fr" title="Regataiades"><img src="/images/logo-ridn.png"></a>
-                <h1>Regataiades 2015</h1><h1>XXXI Edition</h1>
-                <h2>9-10 May</h2>
+                <h1>Régataïades 2015 <br/>XXXI Edition</h1>
+                <h2 id="date">9-10 May 2015</h2>
                 <div>The website is under construction.</dib><div>Please come back later.</div>
         </div>
+		<div id="contact">
+			<h2>Contact & infos</h2>
+			<p>09.54.01.48.10</p>
+			<a href="mailto:contact@regataiades.fr" title="Contact us">contact@regataiades.fr</a>		
+			<p>2 rue de la Houssinière</br>44300 Nantes, FRANCE</p>
+		</div>
+		<div id="social">
+			<h3>Suivez-nous / Follow us</h3>
+			<a target="_blank" href="https://www.facebook.com/Regataiades" title="Facebook Régataïades"><div id="fb"></div></a>
+			<a target="_blank" href="https://twitter.com/regataiades" title="Twitter Régataïades"><div id="tw"></div></a>
+			<a target="_blank" href="https://www.google.com/+RegataiadesFrNantes" title="Google+ Régataïades"><div id="google"></div></a>
+		</div>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-56732732-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
 </body>
 </html>
