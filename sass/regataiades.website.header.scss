@@ -9,10 +9,17 @@ header {
 	
 	font-family: $fontFamily;
 	font-weight: bold;
-	@media screen and (min-width: 768px) { 
+	@media screen and (min-width: 768px) {
 	background: #ffffff url("../images/logos/logo-long-crop.jpg") no-repeat 40px
 		10px;
 		height: 80px;
+		
+		.lang-selector {
+			display: block;
+			position: absolute;
+			right: 8px;
+			top: 41px;
+		}
 		nav { 
 			ul { 
 				float : right;
@@ -42,10 +49,17 @@ header {
 		}
 	}
 	@media screen and (max-width: 768px) {
-		background: #ffffff  url("../images/logos/logo-long-crop-small.jpg") no-repeat 40px
+		background: #ffffff  url("../images/logos/logo-long-crop-small.jpg") no-repeat 10px
 			5px;
 			
 		height: 50px;
+			
+		.lang-selector {
+			display: block;
+			position: absolute;
+			right: 55px;
+			top: 18px;
+		}
 		#nav-menu,
 		#nav-menu.scrolled{
 			display:none ;
@@ -70,8 +84,28 @@ header {
 	}
 }
 header.scrolled {
+	@media screen and (min-width: 768px) {
 	background: #ffffff  url("../images/logos/logo-long-crop-small.jpg") no-repeat 40px
 		5px;
+		
+		.lang-selector {
+			display: block;
+			position: absolute;
+			right: 8px;
+			top: 17px;
+		}
+	}
+	@media screen and (max-width: 768px) {
+	background: #ffffff  url("../images/logos/logo-long-crop-small.jpg") no-repeat 10px
+		5px;
+		
+	.lang-selector {
+		display: block;
+		position: absolute;
+		right: 55px;
+		top: 18px;
+	}
+	}
 	height: 50px;
 	nav {
 		li{
@@ -79,6 +113,7 @@ header.scrolled {
 			max-height: 50px;
 		}
 	}
+	
 }
 #fake_btn, #fake_btn>a{
 	float:left;
