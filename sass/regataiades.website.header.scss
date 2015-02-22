@@ -1,0 +1,91 @@
+header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index:9999;
+	
+	box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.075);
+	
+	font-family: $fontFamily;
+	font-weight: bold;
+	@media screen and (min-width: 768px) { 
+	background: #ffffff url("../images/logos/logo-long-crop.jpg") no-repeat 40px
+		10px;
+		height: 80px;
+		nav { 
+			ul { 
+				float : right;
+				margin: 0px 40px;
+			}
+		
+			li {
+				float: left;
+				list-style: none;
+				font-size: 120%;
+				padding: 40px 20px 20px 20px;
+				font-variant: small-caps;
+				max-height: 80px;
+				
+				
+			}
+			a {
+			color:#000000;
+			text-decoration: none;}
+			a:hover {
+			text-decoration: none;}
+		
+			li:hover {
+				background: $blueColorAlpha;
+				border-bottom: thin solid $blueColor;
+			}
+		}
+	}
+	@media screen and (max-width: 768px) {
+		background: #ffffff  url("../images/logos/logo-long-crop-small.jpg") no-repeat 40px
+			5px;
+			
+		height: 50px;
+		#nav-menu,
+		#nav-menu.scrolled{
+			display:none ;
+		}
+		#nav-menu.shown{
+			display:block ;
+		}
+		
+		ul{
+			
+			margin-top:55px;
+			padding: 0px;
+		}
+		li{
+			list-style: none;
+			display:block;
+			padding:10px;
+			border-bottom:thin solid $blueColor; 
+			font-variant: small-caps;
+			background:#fff;
+		}
+	}
+}
+header.scrolled {
+	background: #ffffff  url("../images/logos/logo-long-crop-small.jpg") no-repeat 40px
+		5px;
+	height: 50px;
+	nav {
+		li{
+			padding: 15px 20px 10px 20px;
+			max-height: 50px;
+		}
+	}
+}
+#fake_btn, #fake_btn>a{
+	float:left;
+	width:50%;
+	height: 100%;
+	
+}
+.navbar-toggle{
+	font-size: 140%;
+}

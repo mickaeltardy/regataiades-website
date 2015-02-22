@@ -1,0 +1,90 @@
+
+
+.slide::before {
+	background-size: 100%;
+	opacity: 0.4	;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+	content: "";
+	background-position: 25%;
+	background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+	.slide {
+	height: 100%;
+	}
+	#home {
+	height: 90%;
+}
+}
+.slide {
+	overflow: auto;
+	display: block;
+	position: relative;
+}
+
+#slider, .slider, .slick-list, .slick-track {
+	height: 100% !important;
+}
+
+#slide-1::before {
+	background-image: url('../images/gallery/photo_race_8.jpg');
+}
+
+#slide-2::before {
+	background-image: url('../images/gallery/photo_flags.jpg');
+}
+
+#slide-3::before {
+	background-image: url('../images/gallery/photo_blade.jpg');
+}
+
+#slide-4::before {
+	background-image: url('../images/gallery/photo_race_f8.jpg');
+}
+
+#slide-5::before {
+	background-image: url('../images/gallery/photo_prize_f4x.jpg');
+}
+
+#slide-6::before {
+	background-image: url('../images/gallery/photo_bridge.jpg');
+}
+
+
+.slide .container{
+	padding:10% 10px;
+	color:#000000;
+	
+	font-variant: small-caps;
+		
+}
+@media (max-width: 768px) {
+	.slide,
+	.slide .container{
+		min-height : 300px;
+	}
+}
+@media screen and (min-width: 768px) {
+.slide .container{
+	padding:10% 60px;
+	@include vertical-align;
+	h1 {
+		font-weight: bolder;
+		font-size:500%;
+	}
+	h2 {
+		font-weight: bolder;
+		font-size:300%;
+	}	
+
+	li {	
+		font-size: 240%;
+	
+	}
+}	
+}
