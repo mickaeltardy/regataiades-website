@@ -6,29 +6,198 @@
 	Nantes</title>
 <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css"
 	media="all" type="text/css" />
-<link rel="stylesheet" href="stylesheets/main.css" media="all"
-	type="text/css" />
+<link rel="stylesheet" href="stylesheets/regataiades.website.css"
+	media="all" type="text/css" />
+<link rel="stylesheet" type="text/css"
+	href="lib/slick-carousel/slick/slick.css" />
+
+<link rel="stylesheet" type="text/css"
+	href="lib/slick-carousel/slick/slick-theme.css" />
+<!-- 
+	
+	#00a1e2
+	<img src="images/logos/logo-long-transp.png" />
+	 -->
 </head>
 <body>
-	<div class="welcome">
-		<a href="http://una-club.fr" title="Regataiades"><img
-			src="images/logo-ridn.png"></a>
-		<h1>
-			Régataïades 2015 <br />XXXI Edition
-		</h1>
-		<h2 id="date">9-10 May 2015</h2>
-		<div>Les inscriptions sont ouvertes !</div>
-		<a href="/registration/" class="btn btn-info btn-lg btn-block">S'inscrire
-			/ Register</a> <!-- <a href="/registration" class="btn btn-default update">Mettre
-			à jour / Update</a> -->
-		
-		<div id="contact">
-			<h2>Contact & infos</h2>
-			<p>09.54.01.48.10</p>
-			<a href="mailto:contact@regataiades.fr" title="Contact us">contact@regataiades.fr</a>
-			<p>
-				2 rue de la Houssinière</br>44300 Nantes, FRANCE
-			</p>
+	<header>
+
+		<button type="button" class="navbar-toggle collapsed"
+			data-toggle="collapse" data-target=".navbar-collapse" id="menu-toggle">
+			<span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+		</button>
+		<div id="fake_btn">
+			<a href="#home"></a>
+		</div>
+		<nav id="nav-menu">
+			<ul>
+				<li><a href="#regatta">Régate</a></li>
+				<li><a href="#registration">Inscription</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="lang-selector"></div>
+	</header>
+
+	<div id="home" class="page">
+
+		<div class="slider">
+			<div id="slide-1" class="slide">
+				<div class="container">
+					<h1>Bienvenue aux Régataïades 2015</h1>
+					<h2>La plus grande compétition internationale d'aviron
+						universitaire de France : 31ième édition</h2>
+				</div>
+			</div>
+			<div id="slide-2" class="slide">
+				<div class="container">
+					<h2>Une régate étudiante mythique</h2>
+					<ul>
+						<li>Des équipes des univérsités et des écoles éuropéenes au
+							rendez-vous</li>
+						<li>Un test parfait à deux semaines du championnat FFSU</li>
+						<li>Une soirée pour tous les participants</li>
+					</ul>
+				</div>
+			</div>
+			<div id="slide-3" class="slide">
+				<div class="container">
+					<h2>Deux épreuves sur un week-end</h2>
+					<ul>
+						<li>Samedi 5 mai 2012 : courses sur 1000m.</li>
+						<li>Dimanche 6 mai 2012 : sprints sur 500m.</li>
+					</ul>
+				</div>
+			</div>
+			<div id="slide-4" class="slide">
+				<div class="container">
+					<h2>Deux catégories d'émbarcations</h2>
+					<ul>
+						<li>Huit de pointe barré (HU8+ et FU8+)</li>
+						<li>Quatre de couple sans barreur (FU4x et FU4x)</li>
+					</ul>
+				</div>
+
+			</div>
+			<div id="slide-5" class="slide">
+				<div class="container">
+					<h2>Déroulement des epreuves dans les conditions du
+						championnat</h2>
+					<ul>
+						<li>Mise en place des départs tenus et des lignes d'eau
+							réglementaires</li>
+						<li>Invitation des arbitres fédéraux</li>
+					</ul>
+				</div>
+			</div>
+			<div id="slide-6" class="slide">
+				<div class="container">
+					<h2>Acceuil de qualité</h2>
+					<ul>
+						<li>Le club situé au coeur de la ville de Nantes</li>
+						<li>Restauration sur reservation</li>
+						<li>Dîner des officiels et la soirée samedi</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--
+	glyphicon glyphicon-cutlery glyphicon glyphicon-calendar glyphicon
+	glyphicon-map-marker glyphicon glyphicon-glass glyphicon
+	glyphicon-bullhorn
+	-->
+	<div id="regatta" class="page">
+		<h1>Régate</h1>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="bs-callout bs-callout-info"
+					id="callout-helper-context-color-specificity">
+					<h4>Embarcations</h4>
+					<ul>
+						<li>Huit de pointe barré (HU8+ et FU8+).</li>
+						<li>Quatre de couple sans barreur (HU4x et FU4x).</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="bs-callout bs-callout-info"
+					id="callout-helper-context-color-specificity">
+					<h4>Epreuves</h4>
+					<ul>
+						<li>Samedi 5 mai 2012 : courses sur 1000m.</li>
+						<li>Dimanche 6 mai 2012 : sprints sur 500m.
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="bs-callout bs-callout-info"
+					id="callout-helper-context-color-specificity">
+					<h4>Tarif d'inscription</h4>
+					<p>&euro; 10 / personne.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+
+			<div class="col-md-4">
+				<div class="bs-callout bs-callout-info"
+					id="callout-helper-context-color-specificity">
+					<h4>Accueil des équipes</h4>
+					<p>Arrivée des équipes à partir du vendredi 08 mai 2015 à 18h00
+						au club.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="bs-callout bs-callout-info"
+					id="callout-helper-context-color-specificity">
+					<h4>Transport et hébergement</h4>
+					<p>A la charge des participants.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="bs-callout bs-callout-info"
+					id="callout-helper-context-color-specificity">
+					<h4>Coques</h4>
+					<p>Il vous est demandé devenir avec vos propres bateaux. Merci
+						de nous contacter pour toute demande de location de coque. Les
+						demandes seront traitées au cas par cas.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="bs-callout bs-callout-info"
+					id="callout-helper-context-color-specificity">
+					<h4>Reservation repas</h4>
+					<p>Réservations possibles jusqu’au mercredi 29 avril dernier
+						délai.</p>
+					<ul>
+						<li>Tarif : &euro; 8 / repas</li>
+						<li>Possibilité de réserver indépendement samedi midi/soir
+							et/ou dimanche midi</li>
+						<li>Réservations sur le site de la régate (ouvertes
+							prochainement)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="registration" class="page">
+		<h1>Inscription</h1>
+		<p>Les inscriptions aux Régataiades sont ouvertes</p>
+		<p>
+			<a class="btn btn-primary btn-lg" href="/registration" role="button">S'inscrire</a>
+		</p>
+	</div>
+	<div id="contact" class="page">
+		<h1>Contact</h1>
+		<div>
+			<ol>
+				<li>Téléphone : 09.54.01.48.10</li>
+				<li>Courriel : <a href="mailto:contact@una-club.fr">contact@regataiades.fr</a></li>
+				<li>Adresse postale : 2 rue de la Houssinière 44300 Nantes</li>
+			</ol>
 		</div>
 		<div id="social">
 			<h3>Suivez-nous / Follow us</h3>
@@ -41,23 +210,60 @@
 
 
 		</div>
-
-		<script>
-			(function(i, s, o, g, r, a, m) {
-				i['GoogleAnalyticsObject'] = r;
-				i[r] = i[r] || function() {
-					(i[r].q = i[r].q || []).push(arguments)
-				}, i[r].l = 1 * new Date();
-				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-				a.async = 1;
-				a.src = g;
-				m.parentNode.insertBefore(a, m)
-			})(window, document, 'script',
-					'//www.google-analytics.com/analytics.js', 'ga');
-
-			ga('create', 'UA-56732732-1', 'auto');
-			ga('send', 'pageview');
-		</script>
+		<table width="80%" cellspacing="1" border="0"
+			style="border: 0px solid black;">
+			<tbody>
+				<tr>
+					<td
+						style="border: 1px solid black; padding: 7px; background-color: rgb(0, 0, 0);">
+						<font color="#ffffff"><strong>Créez votre
+								itinéraire grâce à la google map ci-dessous</strong></font>
+					</td>
+				</tr>
+				<tr>
+					<td style="border: 1px solid black;"><iframe width="100%"
+							scrolling="no" height="600" frameborder="0" marginheight="0"
+							marginwidth="0"
+							src="http://maps.google.fr/maps?hl=fr&amp;client=firefox-a&amp;ie=UTF8&amp;q=club+universit%C3%A9+Nantes+Aviron&amp;fb=1&amp;gl=fr&amp;hq=club+universit%C3%A9+Nantes+Aviron&amp;hnear=0x4805ee81f0a8aead:0x40d37521e0ded30,Nantes&amp;cid=0,0,17809716400053568609&amp;ll=47.235597,-1.550703&amp;spn=0.006295,0.006295&amp;t=m&amp;iwloc=A&amp;output=embed"></iframe><br />
+						<small><a
+							href="http://maps.google.fr/maps?hl=fr&amp;client=firefox-a&amp;ie=UTF8&amp;q=club+universit%C3%A9+Nantes+Aviron&amp;fb=1&amp;gl=fr&amp;hq=club+universit%C3%A9+Nantes+Aviron&amp;hnear=0x4805ee81f0a8aead:0x40d37521e0ded30,Nantes&amp;cid=0,0,17809716400053568609&amp;ll=47.235597,-1.550703&amp;spn=0.006295,0.006295&amp;t=m&amp;iwloc=A&amp;source=embed"
+							style="color: #0000FF; text-align: left">Agrandir le plan</a></small></td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
+
+
+	<footer>
+		<div class="footer-content">
+			Régataiades <a target="_blank"
+				href="https://www.facebook.com/Regataiades"
+				title="Facebook Régataïades">@Facebook</a> <a target="_blank"
+				href="https://twitter.com/regataiades" title="Twitter Régataïades">@Twitter</a>
+			<a target="_blank" href="https://www.google.com/+RegataiadesFrNantes"
+				title="Google+ Régataïades">@Google+</a> / &copy;2015 Club
+			Université Nantes Aviron (UNA)
+		</div>
+	</footer>
+	<script src="lib/jquery/dist/jquery.min.js"></script>
+	<script src="lib/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript"
+		src="lib/slick-carousel/slick/slick.min.js"></script>
+	<script src="js/layout.mgt.js"></script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script',
+				'//www.google-analytics.com/analytics.js', 'ga');
+		ga('create', 'UA-56732732-1', 'auto');
+		ga('send', 'pageview');
+	</script>
 </body>
 </html>
