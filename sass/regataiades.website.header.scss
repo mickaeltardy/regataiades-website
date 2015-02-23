@@ -50,8 +50,8 @@ header {
 	}
 	@media screen and (max-width: 768px) {
 		background: #ffffff  url("../images/logos/logo-long-crop-small.jpg") no-repeat 10px
-			5px;
-			
+			10px;
+		background-size:70%;	
 		height: 50px;
 			
 		.lang-selector {
@@ -59,6 +59,9 @@ header {
 			position: absolute;
 			right: 55px;
 			top: 18px;
+		}
+		.navbar-toggle{
+			margin-right: 0px !important;
 		}
 		#nav-menu,
 		#nav-menu.scrolled{
@@ -70,7 +73,7 @@ header {
 		
 		ul{
 			
-			margin-top:55px;
+			margin-top:50px;
 			padding: 0px;
 		}
 		li{
@@ -85,8 +88,8 @@ header {
 }
 header.scrolled {
 	@media screen and (min-width: 768px) {
-	background: #ffffff  url("../images/logos/logo-long-crop-small.jpg") no-repeat 40px
-		5px;
+		background: #ffffff  url("../images/logos/logo-long-crop-small.jpg") no-repeat 40px
+			5px;
 		
 		.lang-selector {
 			display: block;
@@ -96,15 +99,15 @@ header.scrolled {
 		}
 	}
 	@media screen and (max-width: 768px) {
-	background: #ffffff  url("../images/logos/logo-long-crop-small.jpg") no-repeat 10px
-		5px;
-		
-	.lang-selector {
-		display: block;
-		position: absolute;
-		right: 55px;
-		top: 18px;
-	}
+		background: #ffffff  url("../images/logos/logo-long-crop-small.jpg") no-repeat 10px
+			10px;
+		background-size:70%;
+		.lang-selector {
+			display: block;
+			position: absolute;
+			right: 55px;
+			top: 18px;
+		}
 	}
 	height: 50px;
 	nav {

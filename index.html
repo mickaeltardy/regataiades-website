@@ -24,7 +24,8 @@
 	<header>
 
 		<button type="button" class="navbar-toggle collapsed"
-			data-toggle="collapse" data-target=".navbar-collapse" id="menu-toggle">
+			data-toggle="collapse" data-target=".navbar-collapse"
+			id="menu-toggle">
 			<span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
 		</button>
 		<div id="fake_btn">
@@ -37,7 +38,9 @@
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
-		<div class="lang-selector"><a href="index.en.html"><img src="images/flag-british.png" /></a></div>
+		<div class="lang-selector">
+			<a href="index.en.html"><img src="images/flag-british.png" /></a>
+		</div>
 	</header>
 
 	<div id="home" class="page">
@@ -185,6 +188,13 @@
 		<p>
 			<a class="btn btn-primary btn-lg" href="/registration" role="button">S'inscrire</a>
 		</p>
+		<!-- 
+		<p>Si vous avez déjà rempli le formulaire, vous pouvez le mettre à jour.</p>
+		
+		<p>
+			<a class="btn btn-info btn-default" role="button" onclick="toggleLoginForm('/registration');return false;">Mettre à jour le dossier</a>
+		</p>
+		 -->
 	</div>
 	<div id="contact" class="page">
 		<h1>Contact</h1>
@@ -228,8 +238,18 @@
 			</tbody>
 		</table>
 	</div>
-
-
+	<!-- 
+	<div id="loginFormContainer">
+		<div id="loginFormDiv">
+			<form onsubmit="tryToLogin();return false;">
+				<input type="text" name="username" placeholder="E-mail" /><input
+					type="password" name="password" placeholder="Mot de passe" /><input
+					type="submit" name="submit" value="Se connecter"
+					class="btn btn-primary" /><input type="hidden" name="goal" />
+			</form>
+		</div>
+	</div>
+	 -->
 	<footer>
 		<div class="footer-content">
 			Régataiades <a target="_blank"
@@ -241,10 +261,12 @@
 			Université Nantes Aviron (UNA)
 		</div>
 	</footer>
+
 	<script src="lib/jquery/dist/jquery.min.js"></script>
 	<script src="lib/jquery-ui/jquery-ui.min.js"></script>
 	<script type="text/javascript"
 		src="lib/slick-carousel/slick/slick.min.js"></script>
+	<script src="js/config.js"></script>
 	<script src="js/layout.mgt.js"></script>
 	<script>
 		(function(i, s, o, g, r, a, m) {
