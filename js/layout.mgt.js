@@ -36,14 +36,15 @@ var tryToLogin = function() {
 	try {
 		$.ajax({
 			type : "POST",
-			url : sMetaData.serverUrl + "/login",
+			url : sMetaData.serverUrl + "/api/login",
 			data : {
-				username : lUsername,
+				login : lUsername,
 				password : lPassword
 			}
 			
-		}).done(function(pData) {
-			if (pData["status"] == "success") {
+		}).done(function(result, status, headers) {
+			if (result && result.token) {
+				localStorage.setItem("auth_token", result.token);
 				window.location.href = lGoal;
 			} else {
 				toggleLoginForm("")
