@@ -168,8 +168,9 @@
 					<p>Booking available until Wednesday April 29th.</p>
 					<ul>
 						<li>Cost : &euro; 8 / meal.</li>
-						<li>Available meals: Saturday lunch and dinner and Sunday lunch.</li>
-						<li>Booking on the regatta website (available soon).</li>
+						<li>Available meals: Saturday lunch and dinner and Sunday
+							lunch.</li>
+						<li>Booking online required.</li>
 					</ul>
 				</div>
 			</div>
@@ -179,7 +180,29 @@
 		<h1>Registration</h1>
 		<p>Available on the website</p>
 		<p>
-			<a class="btn btn-primary btn-lg" href="/registration" role="button">Register</a>
+			<a class="btn btn-primary btn-lg" href="/registration#en"
+				role="button">Register</a>
+		</p>
+		<p>If you have already submitted the registration form, you can
+			easily update it.</p>
+
+		<p>
+			<a class="btn btn-info btn-default" role="button"
+				onclick="toggleLoginForm('/regataiades-gui/');return false;">Update
+				registration</a>
+		</p>
+
+		<h1>Meals booking</h1>
+		<p>
+			The meals for the weekend are offered by our partner <a
+				href="http://www.peps-restauration.fr/">PEP'S retaurant</a>. They
+			are bookable on-line (<a href="/registration#en">registration</a> is
+			required). You have until April 29th for book your meals.
+		</p>
+		<p>
+			<a class="btn btn-info btn-default" role="button"
+				onclick="toggleLoginForm('/regataiades-gui/meals.html');return false;">Book
+				meals</a>
 		</p>
 	</div>
 	<div id="contact" class="page">
@@ -208,7 +231,7 @@
 				<tr>
 					<td
 						style="border: 1px solid black; padding: 7px; background-color: rgb(0, 0, 0);">
-						<font color="#ffffff"><strong>Create your 
+						<font color="#ffffff"><strong>Create your
 								direction with the Google map</strong></font>
 					</td>
 				</tr>
@@ -219,12 +242,24 @@
 							src="http://maps.google.fr/maps?hl=fr&amp;client=firefox-a&amp;ie=UTF8&amp;q=club+universit%C3%A9+Nantes+Aviron&amp;fb=1&amp;gl=fr&amp;hq=club+universit%C3%A9+Nantes+Aviron&amp;hnear=0x4805ee81f0a8aead:0x40d37521e0ded30,Nantes&amp;cid=0,0,17809716400053568609&amp;ll=47.235597,-1.550703&amp;spn=0.006295,0.006295&amp;t=m&amp;iwloc=A&amp;output=embed"></iframe><br />
 						<small><a
 							href="http://maps.google.fr/maps?hl=fr&amp;client=firefox-a&amp;ie=UTF8&amp;q=club+universit%C3%A9+Nantes+Aviron&amp;fb=1&amp;gl=fr&amp;hq=club+universit%C3%A9+Nantes+Aviron&amp;hnear=0x4805ee81f0a8aead:0x40d37521e0ded30,Nantes&amp;cid=0,0,17809716400053568609&amp;ll=47.235597,-1.550703&amp;spn=0.006295,0.006295&amp;t=m&amp;iwloc=A&amp;source=embed"
-							style="color: #0000FF; text-align: left">Agrandir le plan</a></small></td>
+							style="color: #0000FF; text-align: left">Make bigger</a></small></td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
-
+	<div id="loginFormContainer">
+		<div id="loginFormDiv">
+			<div id="loginFormClose">
+				<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+			</div>
+			<form onsubmit="tryToLogin();return false;">
+				<input type="text" name="username" placeholder="E-mail" /><input
+					type="password" name="password" placeholder="Mot de passe" /><input
+					type="submit" name="submit" value="Se connecter"
+					class="btn btn-primary" /><input type="hidden" name="goal" />
+			</form>
+		</div>
+	</div>
 
 	<footer>
 		<div class="footer-content">

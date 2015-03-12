@@ -175,8 +175,7 @@
 						<li>Tarif : &euro; 8 / repas</li>
 						<li>Possibilité de réserver indépendement samedi midi/soir
 							et/ou dimanche midi</li>
-						<li>Réservations sur le site de la régate (ouvertes
-							prochainement)</li>
+						<li>Réservation en ligne obligatoire</li>
 					</ul>
 				</div>
 			</div>
@@ -188,13 +187,30 @@
 		<p>
 			<a class="btn btn-primary btn-lg" href="/registration" role="button">S'inscrire</a>
 		</p>
-		
-		<p>Si vous avez déjà rempli le formulaire, vous pouvez le mettre à jour.</p>
-		
+
+		<p>Si vous avez déjà rempli le formulaire, vous pouvez le mettre à
+			jour.</p>
+
 		<p>
-			<a class="btn btn-info btn-default" role="button" onclick="toggleLoginForm('/regataiades-gui/');return false;">Mettre à jour le dossier</a>
+			<a class="btn btn-info btn-default" role="button"
+				onclick="toggleLoginForm('/regataiades-gui/');return false;">Mettre
+				à jour le dossier</a>
 		</p>
-		
+
+		<h1>Reservation des repas</h1>
+		<p>
+			Les repas pour le weekend sont proposés par notre partenaire <a
+				href="http://www.peps-restauration.fr/">restaurant traiteur
+				PEP'S</a>. Ils sont reservables en ligne (<a href="/registration">l'inscription</a>
+			est nécessaire). Vous avez jusqu'à 29 avril pour effectuer ou mettre
+			à jour une reservation.
+		</p>
+		<p>
+			<a class="btn btn-info btn-default" role="button"
+				onclick="toggleLoginForm('/regataiades-gui/meals.html#en');return false;">Réserver
+				les repas</a>
+		</p>
+
 	</div>
 	<div id="contact" class="page">
 		<h1>Contact</h1>
@@ -238,9 +254,12 @@
 			</tbody>
 		</table>
 	</div>
-	 
+
 	<div id="loginFormContainer">
 		<div id="loginFormDiv">
+			<div id="loginFormClose">
+				<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+			</div>
 			<form onsubmit="tryToLogin();return false;">
 				<input type="text" name="username" placeholder="E-mail" /><input
 					type="password" name="password" placeholder="Mot de passe" /><input
@@ -249,7 +268,7 @@
 			</form>
 		</div>
 	</div>
-	 
+
 	<footer>
 		<div class="footer-content">
 			Régataiades <a target="_blank"

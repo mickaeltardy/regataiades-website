@@ -58,6 +58,7 @@ var tryToLogin = function() {
 	return false;
 }
 
+
 $(window).scroll(headerStyleAdapter);
 
 $(document).ready(function() {
@@ -70,3 +71,5 @@ $(document).ready(function() {
 });
 
 $("#menu-toggle").click(toggleMenu);
+
+$("#loginFormClose").click(toggleLoginForm)
