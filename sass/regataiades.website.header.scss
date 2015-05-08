@@ -126,3 +126,12 @@ header.scrolled {
 .navbar-toggle{
 	font-size: 140%;
 }
+
+li.live>a,
+li.live>a:hover {
+	color:#F00;
+}
+li.live:hover {
+	background: $redColorAlpha;
+	border-bottom: thin solid $redColor;
+}
